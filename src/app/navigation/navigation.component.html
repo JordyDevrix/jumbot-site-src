@@ -1,0 +1,38 @@
+<nav>
+  <div class="nav">
+    <div>
+      <a href="https://jumbot.dvrx.one">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Jumbo_Logo.svg/2560px-Jumbo_Logo.svg.png"
+          alt="Jumbo"
+          height="40px"
+        >
+      </a>
+    </div>
+    <div class="navbar-list">
+      <ul>
+        <li><a [routerLinkActive]="['active']" [routerLink]="['']">Home <i class="fa-solid fa-house"></i></a></li>
+        <li><a [routerLinkActive]="['active']" [routerLink]="['info']">Info <i class="fa-solid fa-circle-info"></i></a></li>
+        <li>
+          <a
+            href="https://discord.com/oauth2/authorize?client_id=1214671466780565575&permissions=8&scope=applications.commands%20bot">
+            Toevoegen
+            <i class="fa-brands fa-discord"></i>
+          </a>
+        </li>
+        <li><a [ngStyle]="{'color': urlClickedStyle}"  (click)="copyUrl()">{{ urlText }} <i class="fa-solid fa-share"></i></a></li>
+        <li>
+          <a href="https://buymeacoffee.com/jordydevrix">
+            Buy me a coffee
+            <i class="fa-solid fa-mug-hot"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <button>
+        <i class="fa-solid fa-compass menu-button"></i>
+      </button>
+    </div>
+  </div>
+</nav>

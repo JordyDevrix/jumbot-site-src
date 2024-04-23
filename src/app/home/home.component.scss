@@ -1,0 +1,23 @@
+h1 {
+  color: #FFFFFF;
+}
+
+h3 {
+  color: #FFCE00;
+}
+
+.header {
+  border-radius: 50px;
+  background: #252529;
+  box-shadow:  20px 20px 60px #1f1f23,
+  -20px -20px 60px #2b2b2f;
+  padding: 2em;
+  margin-top: 8em;
+  transition-duration: 500ms;
+}
+
+.header:hover {
+  box-shadow:  15px 15px 45px #1f1f23,
+  -15px -15px 45px #2b2b2f;
+  transform: scale(1.02);
+}

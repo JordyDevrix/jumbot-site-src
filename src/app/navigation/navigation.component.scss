@@ -1,0 +1,129 @@
+nav {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #000000;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 45px;
+  background-color: #FFCE00;
+  border-radius: 15px;
+}
+
+.navbar-list {
+  width: 100%;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #554400;
+}
+
+img {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+button:hover {
+  color: #FFCE00;
+}
+
+.menu-button {
+  font-size: 1.5em;
+  transition-duration: 350ms;
+}
+
+.menu-button:hover {
+  transform: scale(1.2) rotate(-90deg);
+}
+
+a:hover .fa-mug-hot {
+  animation-name: jumpCoffee;
+  animation-duration: 2s;
+}
+
+@keyframes jumpCoffee {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-7px);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: rotate(-5deg);
+  }
+  40% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  60% {
+    transform: rotate(15deg);
+  }
+  70% {
+    transform: rotate(-5deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+}
+
+a:hover .fa-discord {
+  animation-name: jumpDiscord;
+  animation-duration: 2s;
+}
+
+@keyframes jumpDiscord {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(400deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  60% {
+    transform: rotate(15deg);
+  }
+  70% {
+    transform: rotate(-5deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+}
