@@ -1,0 +1,78 @@
+.centerline {
+  text-align: center;
+}
+
+.centerline > div {
+  background-color: #48486F;
+  border-radius: 0 50px 50px 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.main-box {
+  display: grid;
+  grid-template-columns: 49.5% 1% 49.5%;
+  margin-top: 2em;
+}
+
+.info-left {
+  border-radius: 50px;
+  background: #38383F;
+  box-shadow:  20px 20px 60px #1f1f23,
+  -20px -20px 60px #2b2b2f;
+  padding: 1em 2em 2em;
+  margin-bottom: 4em;
+  margin-right: 4em;
+}
+
+.info-right {
+  border-radius: 50px;
+  background: #38383F;
+  box-shadow:  20px 20px 60px #1f1f23,
+  -20px -20px 60px #2b2b2f;
+  padding: 1em 2em 2em;
+  margin-bottom: 4em;
+  margin-left: 4em;
+}
+
+.foryourinfo {
+  border-radius: 50px 0 0 50px;
+  background: #48486F;
+  box-shadow:  20px 20px 60px #1f1f23,
+  -20px -20px 60px #2b2b2f;
+  padding: 1em 2em 2em;
+  margin-bottom: 4em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FFFFFF;
+}
+
+p {
+  color: #EAEAEF;
+}
+
+a {
+  color: #FAFAFF;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #FFCE00;
+}
+
+.add-button {
+  color: #FFCE00;
+}
+
+.info-left > hr {
+  border: 2px solid #49494F;
+  border-radius: 5px;
+}
+
+.info-right > hr {
+  border: 1px solid #67676F;
+  border-radius: 5px;
+}

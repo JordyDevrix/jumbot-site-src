@@ -16,7 +16,7 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
 })
 export class NavigationComponent {
   urlClickedStyle: string = '#000000';
-  urlText: string = 'Delen';
+  urlText: string = 'Share';
   constructor() {}
 
   url: string = 'https://jumbot.dvrx.one/';
@@ -24,10 +24,10 @@ export class NavigationComponent {
   public copyUrl(): void {
     navigator.clipboard.writeText(this.url).then(r => console.log('Copied URL to clipboard'));
     this.urlClickedStyle = '#4444DD';
-    this.urlText = 'Gekopieerd!';
+    this.urlText = 'Copied link!';
     setTimeout(() => {
       this.urlClickedStyle = '#000000';
-      this.urlText = 'Delen';
+      this.urlText = 'Share';
     } , 1000);
   }
 

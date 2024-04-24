@@ -5,4 +5,17 @@ h1 {
 .main-container {
   margin-right: 10%;
   margin-left: 10%;
+  margin-top: 9em;
 }
+
+app-navigation {
+  position: fixed;
+  overflow: hidden;
+  border-radius: 15px;
+  top: 1em;
+  left: 1em;
+  right: 1em;
+  box-shadow: 0 0 15px #000000;
+
+}
+
