@@ -4,7 +4,7 @@
       <div>
         <a href="https://jumbot.dvrx.one">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Jumbo_Logo.svg/2560px-Jumbo_Logo.svg.png"
+            src="https://imgur.com/MtKKTpW.png"
             alt="Jumbo"
           >
         </a>
@@ -39,17 +39,18 @@
       <div class="submenucontent">
         <div>
           <ul>
-            <li><a [routerLinkActive]="['active']" [routerLink]="['']">Home <i class="fa-solid fa-house"></i></a></li>
+            <li><a (click)="closeMenu()" [routerLinkActive]="['active']" [routerLink]="['']">Home <i class="fa-solid fa-house"></i></a></li>
             <li>
               <a
+                (click)="closeMenu()"
                 href="https://discord.com/oauth2/authorize?client_id=1214671466780565575&permissions=8&scope=applications.commands%20bot">
                 Add to server
                 <i class="fa-brands fa-discord"></i>
               </a>
             </li>
-            <li><a [ngStyle]="{'color': urlClickedStyle}"  (click)="copyUrl()">{{ urlText }} <i class="fa-solid fa-share"></i></a></li>
+            <li><a [ngStyle]="{'color': menuUrlClickedStyle}"  (click)="menuCopyUrl()">{{ menuUrlText }} <i class="fa-solid fa-share"></i></a></li>
             <li>
-              <a href="https://buymeacoffee.com/jordydevrix">
+              <a (click)="closeMenu()" href="https://buymeacoffee.com/jordydevrix">
                 Support me!
                 <i class="fa-solid fa-mug-hot"></i>
               </a>
@@ -61,10 +62,10 @@
         </div>
         <div>
           <ul>
-            <li><a href="">Account <i class="fa-solid fa-user"></i></a></li>
-            <li><a href="">Login <i class="fa-solid fa-right-to-bracket"></i></a></li>
-            <li><a href="">Help <i class="fa-solid fa-parachute-box"></i></a></li>
-            <li><a [routerLinkActive]="['active']" [routerLink]="['info']">Info <i class="fa-solid fa-circle-info"></i></a></li>
+            <li><a (click)="closeMenu()" href="">Account <i class="fa-solid fa-user"></i></a></li>
+            <li><a (click)="closeMenu()" href="">Login <i class="fa-solid fa-right-to-bracket"></i></a></li>
+            <li><a (click)="closeMenu()" href="">Help <i class="fa-solid fa-parachute-box"></i></a></li>
+            <li><a (click)="closeMenu()" [routerLinkActive]="['active']" [routerLink]="['info']">Info <i class="fa-solid fa-circle-info"></i></a></li>
           </ul>
         </div>
         <div>
@@ -72,9 +73,9 @@
         </div>
         <div>
           <ul>
-            <li><a href="">Repository <i class="fa-solid fa-code"></i></a></li>
-            <li><a href="">Update log </a><i class="fa-solid fa-list"></i></li>
-            <li><a href="">Command list <i class="fa-solid fa-table-list"></i></a></li>
+            <li><a (click)="closeMenu()" [routerLinkActive]="['active']" [routerLink]="['repository']">Repository <i class="fa-solid fa-code"></i></a></li>
+            <li><a (click)="closeMenu()" href="">Update log </a><i class="fa-solid fa-list"></i></li>
+            <li><a (click)="closeMenu()" href="">Command list <i class="fa-solid fa-table-list"></i></a></li>
           </ul>
         </div>
       </div>

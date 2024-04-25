@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {NgClass, NgStyle} from "@angular/common";
-import {RouterLink, RouterLinkActive} from "@angular/router";
+import { NgClass, NgStyle } from "@angular/common";
+import { RouterLink, RouterLinkActive } from "@angular/router";
 
 @Component({
   selector: 'app-navigation',
@@ -16,7 +16,10 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
 })
 export class NavigationComponent {
   urlClickedStyle: string = '#000000';
+  menuUrlClickedStyle: string = '#000000';
   urlText: string = 'Share';
+  menuUrlText: string = 'Share';
+
   menuStyle: string = 'none';
 
   constructor() {}
@@ -33,6 +36,16 @@ export class NavigationComponent {
     } , 1000);
   }
 
+  public menuCopyUrl(): void {
+    navigator.clipboard.writeText(this.url).then(r => console.log('Copied URL to clipboard'));
+    this.menuUrlClickedStyle = '#4444DD';
+    this.menuUrlText = 'Copied link!';
+    setTimeout(() => {
+      this.menuUrlClickedStyle = '#000000';
+      this.menuUrlText = 'Share';
+    } , 1000);
+  }
+
   public openMenu(): void {
     if (this.menuStyle === 'block') {
       this.menuStyle = 'none';
@@ -41,5 +54,9 @@ export class NavigationComponent {
     }
   }
 
+
+  public closeMenu(): void {
+    this.menuStyle = 'none';
+  }
 
 }

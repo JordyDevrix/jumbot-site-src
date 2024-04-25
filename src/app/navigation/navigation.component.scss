@@ -26,7 +26,7 @@ nav {
   border-radius: 50px;
   width: 5px;
   height: 100%;
-  margin-left: 1em;
+  margin-left: 5em;
   margin-right: 1em;
 }
 
@@ -186,7 +186,7 @@ a:hover .fa-discord {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 730px) {
   .submenucontent {
     display: block;
 
