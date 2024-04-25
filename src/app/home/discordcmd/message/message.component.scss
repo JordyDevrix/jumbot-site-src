@@ -1,27 +1,3 @@
-h1 {
-  color: #FFFFFF;
-}
-
-h3 {
-  color: #FFCE00;
-}
-
-.header {
-  border-radius: 50px;
-  background: #252529;
-  box-shadow:  20px 20px 60px #1f1f23,
-  -20px -20px 60px #2b2b2f;
-  padding: 2em;
-  margin-top: 8em;
-  transition-duration: 500ms;
-}
-
-.header:hover {
-  box-shadow:  15px 15px 45px #1f1f23,
-  -15px -15px 45px #2b2b2f;
-  transform: scale(1.02);
-}
-
 .dc-user-pfp {
   height: 15px;
   width: 15px;
@@ -32,6 +8,7 @@ h3 {
 .dc-bot-pfp {
   height: 3em;
   margin-right: 1em;
+  cursor: pointer;
 }
 
 .dc-username,
@@ -78,12 +55,27 @@ h3 {
   color: #DDDDDD;
 }
 
+.dc-botname {
+  color: #FFCE00;
+  cursor: pointer;
+}
+
+.dc-botname:hover {
+  text-decoration: underline;
+}
+
 .dc-cmd-name {
   border-radius: 3px;
   padding: 3px;
   font-weight: bold;
-  background-color: #304A9D;
-  color: #208ACD;
+  background-color: #3F4A7D;
+  color: #20A0DD;
+  cursor: default;
+}
+
+.dc-cmd-name:hover {
+  background-color: #506AFD;
+  color: #FFFFFF;
 }
 
 .dc-username,
@@ -111,21 +103,13 @@ h3 {
   height: 3em;
 }
 
-.dc-container {
-  background-color: #313338;
-  margin-top: 4em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  align-items: center;
-  border-radius: 50px;
-  overflow: hidden;
-}
-
 .dc-msg-container {
   align-items: center;
-  padding: 1em;
+  padding: 7px 1em 7px 1em;
+  margin-bottom: 1em;
 }
 
 .dc-msg-container:hover {
   background-color: #2E3035;
 }
+
