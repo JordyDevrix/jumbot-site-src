@@ -4,10 +4,12 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { HttpClientModule } from "@angular/common/http";
+import { DiscordMessage } from "./models/discordmessage.model";
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes), provideClientHydration(),
-    importProvidersFrom(HttpClientModule)
+    importProvidersFrom(HttpClientModule),
+    DiscordMessage
   ]
 };

@@ -1,4 +1,5 @@
 <div class="dc-container">
-  <app-message></app-message>
-  <app-message></app-message>
+  @for (message of MessageList; track $index) {
+    <app-message [message]="message"></app-message>
+  }
 </div>
