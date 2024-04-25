@@ -76,3 +76,25 @@ a:hover {
   border: 1px solid #67676F;
   border-radius: 5px;
 }
+
+@media only screen and (max-width: 800px) {
+  .main-box {
+    display: block;
+  }
+
+  .info-left {
+    margin-right: 0;
+    margin-bottom: 3em;
+  }
+
+  .info-right {
+    margin-left: 0;
+    margin-bottom: 3em;
+  }
+
+  .foryourinfo {
+    border-radius: 50px;
+    margin-bottom: 3em;
+  }
+
+}

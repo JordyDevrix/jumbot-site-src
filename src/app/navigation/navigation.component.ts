@@ -17,6 +17,8 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
 export class NavigationComponent {
   urlClickedStyle: string = '#000000';
   urlText: string = 'Share';
+  menuStyle: string = 'none';
+
   constructor() {}
 
   url: string = 'https://jumbot.dvrx.one/';
@@ -29,6 +31,14 @@ export class NavigationComponent {
       this.urlClickedStyle = '#000000';
       this.urlText = 'Share';
     } , 1000);
+  }
+
+  public openMenu(): void {
+    if (this.menuStyle === 'block') {
+      this.menuStyle = 'none';
+    } else {
+      this.menuStyle = 'block';
+    }
   }
 
 

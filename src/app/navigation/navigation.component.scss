@@ -9,7 +9,7 @@ nav {
   align-items: center;
 }
 
-ul {
+.ulnav {
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
@@ -19,6 +19,15 @@ ul {
   height: 45px;
   background-color: #FFCE00;
   border-radius: 15px;
+}
+
+.vr {
+  background-color: #DDDDDD;
+  border-radius: 50px;
+  width: 5px;
+  height: 100%;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .navbar-list {
@@ -40,6 +49,7 @@ a:hover {
 img {
   margin-left: 1em;
   margin-right: 1em;
+  height: 40px;
 }
 
 button {
@@ -49,6 +59,23 @@ button {
   background: none;
   margin-left: 1em;
   margin-right: 1em;
+}
+
+.submenu {
+  padding: 2em;
+}
+
+.submenucontent {
+  display: flex;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}
+
+.submenucontent li {
+  margin: 5px;
 }
 
 button:hover {
@@ -125,5 +152,52 @@ a:hover .fa-discord {
   }
   80% {
     transform: rotate(5deg);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  li.hide-first {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  li.hide-second {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  li.hide-third {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  img {
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  button {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .submenucontent {
+    display: block;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 2em;
+    }
+
+    vr {
+      display: none;
+    }
   }
 }
