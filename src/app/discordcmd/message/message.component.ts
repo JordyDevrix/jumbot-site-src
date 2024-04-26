@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { DiscordMessage } from "../../../models/discordmessage.model";
-import {NgStyle} from "@angular/common";
+import { DiscordMessage } from "../../models/discordmessage.model";
+import { NgStyle } from "@angular/common";
 
 @Component({
   selector: 'app-message',
@@ -18,6 +18,5 @@ export class MessageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.message)
   }
 }

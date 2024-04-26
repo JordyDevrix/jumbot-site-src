@@ -2,21 +2,21 @@
   @if (message?.isReply) {
     <div class="dc-msg-user">
       <img class="dc-user-pfp"
-           src="{{ message?.userPfpUrl }}"
+           src="{{ message?.replyPfpUrl }}"
            alt="jumbot" style="border-radius: 1000px">
-      <span class="dc-username">{{ message?.userName }}</span>
+      <span class="dc-username">{{ message?.replyName }}</span>
       <span class="dc-cmd-used"> used </span>
       <span class="dc-cmd-name">{{ message?.command }}</span>
     </div>
   }
   <div class="dc-msg-jumbot">
     <img class="dc-bot-pfp"
-         src="{{ message?.botPfpUrl }}"
+         src="{{ message?.userPfpUrl }}"
          alt="jumbot" style="border-radius: 1000px">
     <div class="dc-msg-content">
       <div class="dc-msg-top">
         <h3>
-          <span class="dc-botname" [ngStyle]="{'color': message?.botNameColor}">{{ message?.botName }} </span>
+          <span class="dc-botname" [ngStyle]="{'color': message?.userNameColor}">{{ message?.userName }} </span>
           @if (message?.isBot) {
             <span class="dc-botapp">APP </span>
           }
