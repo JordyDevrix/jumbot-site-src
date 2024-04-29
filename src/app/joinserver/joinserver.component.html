@@ -1,0 +1,22 @@
+<div class="frame">
+  <div class="container">
+    <h2>Join our discord servers</h2>
+    <h4>Are you an employee at Jumbo Mark Blaauw? Join our employee discord</h4>
+    <div class="invitespace">
+      <form [formGroup]="joinForm" (ngSubmit)="onSubmit()">
+        <p class="formtext">Join the employee discord by entering the code next to the link</p>
+        <div>
+          <input type="text" class="joinserver" formControlName="secretcode" placeholder="Enter the secret code">
+          <button [disabled]="!joinForm.valid">
+            <h3><i class="fa-brands fa-discord"></i> Join the employee discord</h3>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="invitespace">
+      <button>
+        <h3 href="h"><i class="fa-brands fa-discord"></i> Join the Jumbot discord</h3>
+      </button>
+    </div>
+  </div>
+</div>

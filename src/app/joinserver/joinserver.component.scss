@@ -1,0 +1,110 @@
+.frame {
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  margin-bottom: 3em;
+}
+
+.container {
+  border-radius: 50px;
+  background-color: #FFFFFF;
+  display: grid;
+  justify-content: center;
+  width: 50%;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+h2, h3, h4 {
+  text-align: center;
+}
+
+h2 {
+  margin: 1em 0 0 0;
+}
+
+h3 {
+  margin: 1em;
+}
+
+button {
+  margin: 1em 0 0 0;
+  border-radius: 50px;
+  border: none;
+  background-color: #FFCE00;
+  width: 90%;
+}
+
+button:hover:enabled {
+  cursor: pointer;
+  background-color: #E0DDF3;
+  color: #333388;
+}
+
+.invitespace {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+form {
+  background-color: #68688F;
+  padding: 1em 0 1em 0;
+  border-radius: 50px;
+}
+
+form > p {
+  margin-left: 2em;
+  margin-right: 2em;
+  color: #FFFFFF;
+}
+
+input {
+  border-radius: 50px;
+  border: none;
+  padding: 1em;
+  text-align: center;
+  outline: none;
+}
+
+input.ng-invalid.ng-touched {
+  background-color: #FFAAAA;
+  border: 1px solid #FF0000;
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  h4 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-height: 520px) {
+  .frame {
+    margin-top: 10em;
+  }
+}
+
+@media only screen and (max-height: 480px) {
+  .frame {
+    margin-top: 12em;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  .frame {
+    margin-top: 15em;
+  }
+}

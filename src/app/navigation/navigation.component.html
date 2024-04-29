@@ -62,7 +62,7 @@
         </div>
         <div>
           <ul>
-            <li><a (click)="closeMenu()" href="">Account <i class="fa-solid fa-user"></i></a></li>
+<!--            <li><a (click)="closeMenu()" [routerLinkActive]="['active']" [routerLink]="['account']">Account <i class="fa-solid fa-user"></i></a></li>-->
             <li><a (click)="closeMenu()" href="">Help <i class="fa-solid fa-parachute-box"></i></a></li>
             <li><a (click)="closeMenu()" [routerLinkActive]="['active']" [routerLink]="['info']">Info <i class="fa-solid fa-circle-info"></i></a></li>
           </ul>
@@ -74,6 +74,14 @@
           <ul>
             <li><a (click)="closeMenu()" [routerLinkActive]="['active']" [routerLink]="['repository']">Repository <i class="fa-solid fa-code"></i></a></li>
             <li><a (click)="closeMenu()" [routerLinkActive]="['active']" [routerLink]="['commands']">Command list <i class="fa-solid fa-table-list"></i></a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="vr"></div>
+        </div>
+        <div>
+          <ul>
+            <li><a (click)="closeMenu()" [routerLinkActive]="['active']" [routerLink]="['jumboserver']">Join jumbo discord <i class="fa-brands fa-discord"></i></a></li>
           </ul>
         </div>
       </div>
