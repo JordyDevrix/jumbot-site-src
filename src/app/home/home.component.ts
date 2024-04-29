@@ -9,7 +9,7 @@ import { MsgTime } from "../services/msgtime.service";
   standalone: true,
   imports: [DiscordcmdComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
 })
 export class HomeComponent implements OnInit {
   public dateTime: Date = new Date();
