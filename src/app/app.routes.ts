@@ -14,5 +14,5 @@ export const routes: Routes = [
   { path: 'commands', component: CommandlistComponent },
   // { path: 'account', component: AccountComponent },
   // { path: 'dashboard', component: DashboardComponent },
-  { path: 'jumboserver', component: JoinserverComponent }
+  { path: 'servers', component: JoinserverComponent }
 ];
