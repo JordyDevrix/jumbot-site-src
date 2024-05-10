@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
 
   public userOne: DiscordUser = {
     name: "JordyDevrix",
-    pfpUrl: "https://cdn.discordapp.com/avatars/495328668105703426/d9194152101c8d56aa1a88e952d2a8ed.webp?size=100",
+    pfpUrl: "https://cdn.discordapp.com/avatars/495328668105703426/3bc9dd69cd77a8caf6f240143f70d493.webp?size=100",
     nameColor: "#98586F"
   }
 
