@@ -24,7 +24,7 @@ export class NavigationComponent {
 
   constructor() {}
 
-  url: string = 'https://jumbot.dvrx.one/';
+  url: string = 'https://jumbot.nl/';
 
   public copyUrl(): void {
     navigator.clipboard.writeText(this.url).then(r => console.log('Copied URL to clipboard'));
