@@ -38,4 +38,8 @@ export class JoinserverComponent {
     } , 1000);
   }
 
+  joinJumboPublic() {
+    window.open("https://discord.gg/9YSRCBfNAX");
+  }
+
 }
